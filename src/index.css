@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
 }
+body{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  background-color: #41404D;
+}
+.header-img{
+  width: 317px;
+  height: 317px;
+  border-radius: 10px 10px 0 0;
+  margin-top: 44px;
+  background-color: #23252C;
+}
+.main-content{
+  background-color: #23252C;
+  width: 317px;
+  margin-bottom: 21px;
+  border-radius: 0 0 10px 10px;
+}
+.main-content h1{
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: 21px;
+}
+.main-content h3{
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #F3BF99;
+  margin-top: 6px;
+}
+.main-content h4{
+  font-weight: 400;
+  color: #F5F5F5;
+  margin-top: 9px;
+  font-size: 10px;
+  text-align: center;
+}
+.btn-group{
+  text-align: center;
+  margin-top: 15px;
+}
+.btn-group .btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 115px;
+  height: 34px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 9px 13px 9px 11px;
+}
+.btn-group .btn:hover{
+  filter: brightness(1.1);
+}
+.btn-group .btn-email{
+  margin-right: 17px;
+  border: 1px solid #D1D5DB;
+  background-color: #fff;
+  color: #374151;
+}
+.btn-group .btn-linkedin{
+  background-color: #5093E2;
+  color: #fff;
+  border: none;
+}
+.fa-solid,.fa-brands{
+  width: 16px;
+  margin-right: 8px;
+  align-items: center;
+}
+.fa-solid{
+  color: #1E1F26;
+}
+.main-text{
+  width: 247px;
+  margin-left: 36px;
+}
+.main-text h2{
+  font-size: 16px;
+  color: #F5F5F5;
+  font-weight: 700;
+  margin-top: 33px;
+}
+.main-text p{
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  color: #DCDCDC;
+}
+footer{
+  height: 64px;
+  background-color: #161619;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+footer .fa-brands{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #918E9B;
+  color: #161619;
+  margin-right: 24px;
+  border-radius: 2px;
+  transition: all .3s linear;
+}
+.fa-twitter:hover{
+  color: #1d9bf0;
+  background-color: #161619;
+  scale: 1.2;
+}
+.fa-facebook-f:hover{
+  color: #1877f2;
+  background-color: #161619;
+  scale: 1.2;
+}
+.fa-instagram:hover{
+  color: #FA383E;
+  background-color: #161619;
+  scale: 1.2;
+}
+.fa-github:hover{
+  color: #8b949e;
+  background-color: #161619;
+  scale: 1.2;
+}
+footer a{
+  text-decoration: none;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
